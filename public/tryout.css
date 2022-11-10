@@ -1,0 +1,36 @@
+body{
+  background-image: url(https://media1.giphy.com/media/xT1XGLSb5E1VjIUw4E/giphy.gif);
+  background-repeat: no-repeat;
+  background-size: 38%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0%;
+  font-family: 'Just Another Hand', cursive;
+  }
+/* img{
+  width: 100%;
+ 
+} */
+
+h1{
+  color: black;
+}
+
+input{
+  width: 100%;
+  height: 45px;
+  font-size: 2rem;
+  color: rgb(229, 58, 88);
+  background-color: black;
+ 
+}
+
+p{
+  color: grey;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 1.5rem;
+}
+
+

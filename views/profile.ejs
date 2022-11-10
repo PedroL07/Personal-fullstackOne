@@ -1,28 +1,28 @@
 <!doctype html>
 <html>
 <head>
-    <title>21 Savage Fan Site</title>
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+  <title>Dollar coffee shop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css"> -->
     <script src="https://kit.fontawesome.com/fe55a8ead5.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="looks.css">
 </head>
 <body>
-<div class="container">
+
 
     <div class="page-header text-center">
-        <h1><span><i class="fa-solid fa-person-running"></i></span> Quick-Stop Coffee Shop</h1>
-        <a href="/logout" class="btn btn-default btn-sm">Clock - Out</a>
-        <a href="/logout" class="btn btn-warning btn-sm">Reset order</a>
+        <h1><span><i class="fa-solid fa-person-running"></i></span> Quick-Dollar Coffee Shop</h1>
+        <a href="/logout" class="dip">Clock - Out</a>
+        <!-- <a href="/logout" class="dip">Reset order</a> -->
     </div>
 
-    <div class="container text-center">
-      <div class="row">
-        <div class="col-sm-3">
-          <h3><span><i class="fa-solid fa-mug-hot"></i></i></span> Menu</h3>
 
+        <section>
+          <h3><span><i class="fa-solid fa-mug-hot"></i></i></span> MENU</h3>
           <% if (user.local.email) { %>
-              <p>
                 <form action="/messages" method="POST">
                   <button class="ice btn btn-primary" value="Ice coffee" name="order">Ice Coffee</button><br>
                   <button class="hot btn btn-primary" value="Hot coffee" name="order">Hot Coffee</button><br>
@@ -40,17 +40,13 @@
                   <!-- <strong>id</strong>: <%= user._id %><br>
                   <strong>email</strong>: <%= user.local.email %><br> -->
                   <!-- <strong>password</strong>: <%= user.local.password %> -->
-              </p>
-
               <a href="/unlink/local" class="btn btn-default"></a>
           <% } else { %>
               <a href="/connect/local" class="btn btn-default"></a>
           <% } %>
-        </div>
-        <div class="col-sm-9">
-          <div class="row">
-            <div class="col-8 col-sm-6">
-              <h3><i class="fa-solid fa-list"></i> Order</h3>
+        </section>
+              <section>
+              <h3><i class="fa-solid fa-list"></i> ORDER</h3>
               <ul class="messages">
               <% for(var i=0; i<messages.length; i++) {%>
                 <li class="message">
@@ -58,37 +54,29 @@
                   <!-- <span><%= messages[i].name %></span>
                   <span><%= messages[i].msg %></span> -->
                   <!-- <span class="zero"><%= messages[i].ice %></span> -->
-                  <!-- <span><i class="fa fa-thumbs-up" aria-hidden="true"></i></span>
-                  <span><i class="fa fa-thumbs-down" aria-hidden="true"></i></span> -->
+                  <!-- <span><i class="fa fa-thumbs-up" aria-hidden="true"></i></span> -->
+                  <!-- <span><i class="fa fa-thumbs-down" aria-hidden="true"></i></span>  -->
                   <span><i class="fa fa-trash-o" aria-hidden="true"></i></span> 
                 </li>
               <% } %>
               </ul>
-            </div>
+            
+          </section>
+            <section>
             <div class="col-4 col-sm-6">
-              <h3><span><i class="fa-solid fa-money-bills"></i></span> Cost</h3>
+              <h3><span><i class="fa-solid fa-money-bills"></i></span> COST</h3>
               <ul class="messages">
               <% for(var i=0; i<messages.length; i++) {%>
                 <li class="message">
                   <span>$<%= messages[i].ice %> USD</span>
-                  <!-- <span><%= messages[i].name %></span>
-                  <span><%= messages[i].msg %></span> -->
-                  <!-- <span><%= messages[i].thumbUp %></span>
-                  <span><i class="fa fa-thumbs-up" aria-hidden="true"></i></span>-->
-                  <!-- <span><i class="fa fa-thumbs-down" aria-hidden="true"></i></span>  -->
-                   <!-- <span><i class="fa fa-trash-o" aria-hidden="true"></i></span>  -->
+
                 </li>
               <% } %>
               </ul>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
+          </section>
         
-        <div class="row-lg-1">
-          
-        </div>
+
 
 <script src="main.js"></script>
 

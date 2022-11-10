@@ -1,3 +1,5 @@
+![Dollar Coffee Shop](img.jpg)
+
 ## Installation
 
 1. Clone repo

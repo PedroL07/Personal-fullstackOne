@@ -1,0 +1,98 @@
+body{
+  word-wrap:break-word;
+  
+  background-image: url(img/coffee.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  font-family: 'Roboto Mono', monospace;
+
+}
+h1,.fa-person-running{
+  font-size: 4rem;
+  color: #efff00;
+  background-color: rgb(0, 0, 0);
+}
+h1,.dip{
+  display: flex;
+  justify-content: center;
+}
+a,span,h3{
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+
+section{
+  float: left;
+  width: 33.33%;
+
+}
+
+li{
+  background-color: rgba(101, 58, 44, 0.61);
+  list-style: none;
+}
+
+
+/* CSS */
+button-53 {
+  background-color: #3DD1E7;
+  border: 0 solid #E5E7EB;
+  box-sizing: border-box;
+  color: #000000;
+  display: flex;
+  font-family: ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: 1rem;
+  font-weight: 700;
+  justify-content: center;
+  line-height: 1.75rem;
+  padding: .75rem 1.65rem;
+  position: relative;
+  text-align: center;
+  text-decoration: none #000000 solid;
+  text-decoration-thickness: auto;
+  width: 100%;
+  max-width: 460px;
+  position: relative;
+  cursor: pointer;
+  transform: rotate(-2deg);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+button {
+  position: relative;
+  background-color: rgba(101, 58, 44, 0.575);
+  border: none;
+  font-size: 28px;
+  color: #FFFFFF;
+  padding: 5px;
+  width: 200px;
+  text-align: center;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+button:after {
+  content: "";
+  background: #f1f1f1;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+
